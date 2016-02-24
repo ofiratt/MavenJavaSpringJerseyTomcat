@@ -1,7 +1,8 @@
 # MavenJavaSpringJerseyTomcat
 
 Please read first some good rest guide like http://www.vogella.com/tutorials/REST/article.html
-1. Java 7 or above on your PC
+
+1. Download Java 7 or above on your PC
 2. Check that you have maven: **mvn --version**
   1. Download maven if needed- https://maven.apache.org/download.cgi (the binary one)
   2. Unzip it
