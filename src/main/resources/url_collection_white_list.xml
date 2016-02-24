@@ -1,0 +1,27 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans" xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean class="java.util.ArrayList" id="urlRoles">
+        <constructor-arg>
+            <list>
+                <ref bean="url1" />
+                <ref bean="url2" />
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="url1" class="com.ofir.server.filter.UrlRole">
+        <property name="url" value="/hello" />
+        <property name="method" value="GET" />
+        <property name="role" value="EveryoneRole" />
+    </bean>
+
+    <bean id="url2" class="com.ofir.server.filter.UrlRole">
+        <property name="url" value="/comment" />
+        <property name="method" value="POST" />
+        <property name="role" value="UserRole" />
+    </bean>
+
+
+</beans>
